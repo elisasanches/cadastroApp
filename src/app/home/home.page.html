@@ -1,20 +1,41 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
+
 </ion-header>
 
-<ion-content [fullscreen]="true">
+<ion-content>
   <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
   </ion-header>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+  <div>
+    <h1 class="titulo" > Login / Cadastro </h1>
+    <br>
+    <ion-card>
+
+      <ion-card-content color="dark">
+
+        <ion-item>
+          <ion-icon name="person-circle-outline"></ion-icon>
+          <ion-label position="floating">E-mail:</ion-label>
+          <ion-input placeholder="Informe seu e-mail"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-icon name="lock-open-outline"></ion-icon>
+          <ion-label position="floating">Senha:</ion-label>
+          <ion-input placeholder="Informe sua senha" type="password"></ion-input >
+        </ion-item>
+
+        <br>
+          <ion-item lines="none">
+          <ion-label>Manter Logado</ion-label>
+          <ion-checkbox></ion-checkbox>
+        </ion-item>
+        <br>
+
+        <ion-button expand="full">Fazer Login</ion-button>
+
+        <ion-button expand="full" routerLink="/cadastro">Cadastrar-se</ion-button>
+      </ion-card-content>
+    </ion-card>
   </div>
 </ion-content>
